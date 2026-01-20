@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Rozklad na prvočísla</title>
+</head>
+<body>
+  <h1>Rozklad na prvočísla</h1>
+
+  <form method="post">
+    <input type="number" name="number" min="2" required>
+    <button>Spočítat</button>
+  </form>
+
+  {% if vysledek %}
+    <p>Výsledek: {{ vysledek | join(" × ") }}</p>
+  {% endif %}
+</body>
+</html>
